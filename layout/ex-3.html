@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左侧固定宽 + 中间自适应 + 右侧定宽</title>
+    <style>
+        .parent{
+            display: flex; /* 关键代码 */
+
+            width: 100%;
+            background: #f7f7f7;
+        }
+        .l{
+            width: 200px; /* 关键代码 */
+
+            background: #f7f7f7;
+        }
+        .c{
+            flex: 1; /* 关键代码 */
+
+            background: #ddd;
+        }
+        .r{
+            width: 200px; /* 关键代码 */
+
+            background: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="l">左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度 左侧固定宽度</div>
+        <div class="c">
+            <p>中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应 中间自适应</p>
+        </div>
+        <div class="r">右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度 右侧固定宽度</div>
+    </div>
+</body>
+</html>
